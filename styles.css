@@ -1,0 +1,142 @@
+/* Universal CSS Styles */
+:root {
+  --primary: #0066cc;
+  --secondary: #003366;
+  --light: #f0f8ff;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  padding: 15px 0;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* Navigation */
+.navbar {
+  background: var(--secondary);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #cce6ff;
+}
+
+.dropdown-menu {
+  background-color: var(--primary);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(0,102,204,0.8), rgba(0,51,102,0.8));
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Content Sections */
+.section-title {
+  color: var(--secondary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.card {
+  border: 1px solid var(--primary);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: var(--secondary);
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-links a {
+  color: #aad4ff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-light {
+  background-color: var(--light);
+  color: var(--secondary);
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
