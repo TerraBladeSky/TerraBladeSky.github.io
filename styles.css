@@ -1,3 +1,4 @@
+/* Updated CSS */
 /* Universal CSS Styles */
 :root {
   --primary: #0066cc;
@@ -9,6 +10,7 @@ body {
   font-family: 'Arial', sans-serif;
   color: #333;
   background-color: #fff;
+  text-align: center;
 }
 
 /* Header */
@@ -123,6 +125,7 @@ footer {
 .footer-links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
 }
 
 .footer-links a {
@@ -150,11 +153,14 @@ footer {
   border-bottom: 2px solid var(--primary);
   padding-bottom: 10px;
   margin-bottom: 25px;
+  display: inline-block;
 }
 
 .card {
   border: 1px solid var(--primary);
   transition: transform 0.3s;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -166,16 +172,6 @@ footer {
   background: var(--secondary);
   color: white;
   padding: 30px 0;
-}
-
-.footer-links a {
-  color: #aad4ff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: white;
-  text-decoration: underline;
 }
 
 /* Utility Classes */
@@ -228,4 +224,186 @@ footer {
 .btn-lg {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
+}
+
+/* Centering Utilities */
+.justify-center {
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* Grid System */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+[class*="col-"] {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-lg-8 {
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+}
+
+.col-lg-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-md-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+/* Centering for Cards */
+.card-body {
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .col-lg-8, .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-3, .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* Contact Page Specific Styles */
+.contact-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.contact-benefits {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--primary);
+  padding: 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-benefits h3 {
+  color: var(--secondary);
+  margin-top: 0;
+}
+
+.contact-benefits ul {
+  padding-left: 20px;
+}
+
+.contact-benefits li {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 50px;
+}
+
+.contact-form h3 {
+  color: var(--secondary);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.contact-info-section {
+  margin-top: 40px;
+}
+
+.contact-details {
+  padding: 20px;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+}
+
+.contact-details a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.business-hours {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.map-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.map-container iframe {
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .business-hours {
+    margin-top: 20px;
+  }
+  
+  .map-container {
+    margin-top: 30px;
+  }
 }
