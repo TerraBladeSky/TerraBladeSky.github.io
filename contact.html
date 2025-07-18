@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Contractor Company</title>
+  <title>Contact - DDC Homes</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="d-flex justify-content-center">
-        <img src="logo.jpg" alt="Contractor Logo" class="logo">
+        <img src="logo.jpg" alt="DDC Homes Logo" class="logo">
       </div>
     </div>
   </header>
@@ -18,7 +18,7 @@
   <nav class="navbar">
     <div class="container">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#">Services</a>
@@ -30,64 +30,333 @@
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Contact Hero Section -->
+  <section class="banner">
+    <div class="container">
+      <h1 class="fade-in">Get In Touch With DDC Homes</h1>
+      <p class="fade-in-delayed">Ready to build your dream home or renovate your space? We're here to help make your vision a reality.</p>
+      <a href="#contact-form" class="btn btn-light btn-lg pulse-btn">Get Free Quote</a>
+    </div>
+  </section>
+
   <main class="container">
-    <h1 class="section-title text-center">Contact Us</h1>
-    
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Phone</label>
-            <input type="tel" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Service Interested In</label>
-            <select class="form-control">
-              <option>Roofing</option>
-              <option>Renovations</option>
-              <option>New Construction</option>
-              <option>Custom Homes</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" rows="5"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <!-- Contact Introduction -->
+    <section class="contact-intro">
+      <h2 class="section-title">Why Choose DDC Homes?</h2>
+      <p>With over 15 years of experience in construction and renovation, DDC Homes is your trusted partner for all your building needs. From custom homes to complete renovations, we deliver quality craftsmanship with personalized service.</p>
+      
+      <div class="contact-benefits">
+        <h3>What You Get When You Contact Us:</h3>
+        <ul>
+          <li><strong>Free Consultation:</strong> Initial assessment and project discussion at no cost</li>
+          <li><strong>Detailed Estimate:</strong> Comprehensive breakdown of costs and timeline</li>
+          <li><strong>Expert Advice:</strong> Professional recommendations tailored to your needs</li>
+          <li><strong>Quality Assurance:</strong> Licensed, insured, and committed to excellence</li>
+          <li><strong>Flexible Scheduling:</strong> We work around your schedule and availability</li>
+        </ul>
       </div>
-      <div class="col-md-6">
-        <h3>Contact Information</h3>
-        <p><strong>Phone:</strong> (+63) 915 072 8318 / (+63) 8 282 6823</p>
-        <p><strong>Email:</strong> during.ddc@gmail.com</p>
-        <p><strong>Address:</strong> 364 Villa Encarnacion Subdivision, Veinte Reales,Valenzuela City</p>
-        <h4>Our Location</h4>
-        <div class="map-placeholder">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.94098679075!2d120.98357831484136!3d14.707747989785896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b3726a5b28a9%3A0x6d9f7a7f7e9a8f4b!2s364%20Villa%20Encarnacion%20Subdivision%2C%20Veinte%20Reales%2C%20Valenzuela%20City%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>Request Your Free Consultation</h3>
+          <p>Fill out the form below and we'll get back to you within 24 hours with a detailed response to your inquiry.</p>
+          
+          <form id="main-contact-form">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="address">Property Address (if applicable)</label>
+              <input type="text" id="address" name="address" class="form-control" placeholder="Street Address, City, ZIP Code">
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="service">Service Needed *</label>
+                  <select id="service" name="service" class="form-control" required>
+                    <option value="">Select a service...</option>
+                    <option value="roofing">Roofing Services</option>
+                    <option value="renovations">Home Renovations</option>
+                    <option value="new-construction">New Construction</option>
+                    <option value="custom-homes">Custom Homes</option>
+                    <option value="consultation">General Consultation</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="budget">Estimated Budget</label>
+                  <select id="budget" name="budget" class="form-control">
+                    <option value="">Select budget range...</option>
+                    <option value="under-500k">Under ₱500,000</option>
+                    <option value="500k-1m">₱500,000 - ₱1,000,000</option>
+                    <option value="1m-2m">₱1,000,000 - ₱2,000,000</option>
+                    <option value="2m-5m">₱2,000,000 - ₱5,000,000</option>
+                    <option value="over-5m">Over ₱5,000,000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="timeline">Preferred Timeline</label>
+              <select id="timeline" name="timeline" class="form-control">
+                <option value="">Select timeline...</option>
+                <option value="asap">As soon as possible</option>
+                <option value="1-3months">1-3 months</option>
+                <option value="3-6months">3-6 months</option>
+                <option value="6-12months">6-12 months</option>
+                <option value="planning">Still planning</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Project Details *</label>
+              <textarea id="message" name="message" class="form-control" rows="6" placeholder="Please describe your project, specific requirements, and any questions you have..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label>
+                <input type="checkbox" name="newsletter" value="yes"> 
+                I'd like to receive updates about DDC Homes services and construction tips
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+            <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+          </form>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="contact-info-section">
+            <h4>Quick Response Guarantee</h4>
+            <p>We understand that your time is valuable. That's why we guarantee a response within 24 hours of receiving your inquiry.</p>
+            
+            <div class="response-stats">
+              <div class="stat-item">
+                <span class="counter" data-target="24">0</span>
+                <small>Hour Response Time</small>
+              </div>
+              <div class="stat-item">
+                <span class="counter" data-target="98">0</span>
+                <small>% Customer Satisfaction</small>
+              </div>
+              <div class="stat-item">
+                <span class="counter" data-target="500">0</span>
+                <small>Projects Completed</small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Contact Information Grid -->
+    <section class="contact-info-grid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card contact-card hover-zoom">
+            <div class="card-body">
+              <h4>📞 Call Us</h4>
+              <p><strong>Main Office:</strong><br>
+              <a href="tel:+639150728318">(+63) 915 072 8318</a></p>
+              <p><strong>Landline:</strong><br>
+              <a href="tel:+63828268">(+63) 8 282 6823</a></p>
+              <p><small>Mon-Fri: 8AM-6PM<br>Sat: 9AM-1PM</small></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card contact-card hover-zoom">
+            <div class="card-body">
+              <h4>📧 Email Us</h4>
+              <p><strong>General Inquiries:</strong><br>
+              <a href="mailto:during.ddc@gmail.com">during.ddc@gmail.com</a></p>
+              <p><strong>Project Quotes:</strong><br>
+              <a href="mailto:quotes@ddchomes.com">quotes@ddchomes.com</a></p>
+              <p><small>We respond within 24 hours</small></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card contact-card hover-zoom">
+            <div class="card-body">
+              <h4>🏠 Visit Us</h4>
+              <p><strong>Office Address:</strong><br>
+              364 Villa Encarnacion Subdivision<br>
+              Veinte Reales, Valenzuela City<br>
+              Metro Manila, Philippines</p>
+              <p><small>By appointment only</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas">
+      <h2 class="section-title text-center">Areas We Serve</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Primary Service Areas:</h4>
+          <div class="area-list">
+            <div class="area-item">✓ Valenzuela City</div>
+            <div class="area-item">✓ Quezon City</div>
+            <div class="area-item">✓ Caloocan City</div>
+            <div class="area-item">✓ Malabon City</div>
+            <div class="area-item">✓ Navotas City</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Extended Service Areas:</h4>
+          <div class="area-list">
+            <div class="area-item">✓ Marikina City</div>
+            <div class="area-item">✓ San Juan City</div>
+            <div class="area-item">✓ Mandaluyong City</div>
+            <div class="area-item">✓ Bulacan Province</div>
+            <div class="area-item">✓ Rizal Province</div>
+          </div>
+          <p><small>*Additional travel charges may apply for extended areas</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map and Location -->
+    <section class="location-section">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="map-container">
+            <h3>Find Our Office</h3>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.94098679075!2d120.98357831484136!3d14.707747989785896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b3726a5b28a9%3A0x6d9f7a7f7e9a8f4b!2s364%20Villa%20Encarnacion%20Subdivision%2C%20Veinte%20Reales%2C%20Valenzuela%20City%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="location-details">
+            <h3>Getting to Our Office</h3>
+            
+            <div class="directions">
+              <h5>🚗 By Car:</h5>
+              <p>From EDSA, take the Valenzuela exit and follow MacArthur Highway. Turn right at Veinte Reales Street and look for Villa Encarnacion Subdivision.</p>
+              
+              <h5>🚌 By Public Transport:</h5>
+              <p>Take the MRT to North Avenue, then board a bus to Valenzuela. Get off at Veinte Reales and take a tricycle to Villa Encarnacion Subdivision.</p>
+              
+              <h5>🏢 Landmarks:</h5>
+              <p>Near Valenzuela City Hall, SM City Valenzuela, and Fatima University Medical Center.</p>
+            </div>
+            
+            <div class="business-hours">
+              <h4>Business Hours</h4>
+              <div class="hours-grid">
+                <div class="day">Mon-Fri</div>
+                <div class="time">8:00 AM - 6:00 PM</div>
+                <div class="day">Saturday</div>
+                <div class="time">9:00 AM - 1:00 PM</div>
+                <div class="day">Sunday</div>
+                <div class="time">By Appointment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>🚨 Emergency Services</h3>
+          <p>Need urgent repairs or have a construction emergency? We offer 24/7 emergency services for critical situations.</p>
+          <ul>
+            <li>Roof leaks and storm damage</li>
+            <li>Structural issues requiring immediate attention</li>
+            <li>Electrical or plumbing emergencies in ongoing projects</li>
+            <li>Water damage restoration</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="emergency-number">
+            <h4>Emergency Hotline</h4>
+            <a href="tel:+639150728318" class="emergency-btn">
+              📞 (+63) 915 072 8318
+            </a>
+            <p><small>Available 24/7 for emergencies</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <h2 class="section-title text-center">What Our Clients Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"DDC Homes transformed our old house into a beautiful modern home. Their attention to detail and professionalism exceeded our expectations."</p>
+            <footer>- Maria Santos, Quezon City</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Fast response, fair pricing, and excellent craftsmanship. We couldn't be happier with our new roof installation."</p>
+            <footer>- Roberto Cruz, Valenzuela City</footer>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"From consultation to completion, DDC Homes was professional and reliable. Highly recommend for any construction needs."</p>
+            <footer>- Jennifer Lim, Caloocan City</footer>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="text-center">
@@ -95,26 +364,339 @@
       <div class="row">
         <div class="col-md-4">
           <h5>Contact Us</h5>
-          <p>364 Villa Encarnacion Subdivision<br>Veinte Reales,Valenzuela City</p>
+          <p>364 Villa Encarnacion Subdivision<br>Veinte Reales, Valenzuela City</p>
+          <p>📞 (+63) 915 072 8318<br>📧 during.ddc@gmail.com</p>
         </div>
         <div class="col-md-4">
           <h5>Business Hours</h5>
-          <p>Mon-Fri: 8AM - 6PM<br>Sat: 9AM - 1PM</p>
+          <p>Mon-Fri: 8AM - 6PM<br>Sat: 9AM - 1PM<br>Sun: By Appointment</p>
         </div>
         <div class="col-md-4">
           <h5>Quick Links</h5>
           <div class="footer-links">
             <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
             <a href="contact.html">Free Estimate</a>
           </div>
         </div>
       </div>
       <hr>
-      <p>© 2025 DDC Homes. All rights reserved.</p>
+      <p>© 2025 DDC Homes. All rights reserved. Licensed & Insured Contractor</p>
     </div>
   </footer>
 
   <script src="universal.js"></script>
+  
+  <style>
+    /* Enhanced Contact Page Styles */
+    .contact-intro {
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+    
+    .contact-benefits {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+      border-left: 4px solid var(--primary);
+      padding: 25px;
+      margin: 30px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      margin: 50px 0;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+    }
+    
+    .form-control:invalid {
+      border-color: #dc3545;
+    }
+    
+    .contact-info-section {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 12px;
+      height: 100%;
+    }
+    
+    .response-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    
+    .stat-item {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+    
+    .stat-item .counter {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+    
+    .stat-item small {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .contact-info-grid {
+      margin: 60px 0;
+    }
+    
+    .contact-card {
+      height: 100%;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .contact-card h4 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+    }
+    
+    .contact-card a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .contact-card a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    
+    .service-areas {
+      background: var(--light);
+      padding: 50px 0;
+      margin: 60px 0;
+      border-radius: 12px;
+    }
+    
+    .area-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .area-item {
+      padding: 12px;
+      background: white;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    
+    .area-item:hover {
+      transform: translateX(5px);
+    }
+    
+    .location-section {
+      margin: 60px 0;
+    }
+    
+    .map-container {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .map-container iframe {
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    
+    .location-details {
+      padding: 25px;
+    }
+    
+    .directions h5 {
+      color: var(--primary);
+      margin: 20px 0 10px 0;
+    }
+    
+    .directions p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .business-hours {
+      background: var(--light);
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .day {
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    
+    .time {
+      color: var(--primary);
+    }
+    
+    .emergency-contact {
+      background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%);
+      padding: 40px;
+      border-radius: 12px;
+      margin: 60px 0;
+      border: 2px solid #ffcccb;
+    }
+    
+    .emergency-number {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .emergency-btn {
+      display: inline-block;
+      background: #dc3545;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(220,53,69,0.3);
+    }
+    
+    .emergency-btn:hover {
+      background: #c82333;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220,53,69,0.4);
+    }
+    
+    .testimonials-section {
+      margin: 60px 0;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .testimonial-card footer {
+      color: var(--secondary);
+      font-weight: 600;
+      text-align: right;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-form {
+        padding: 25px;
+      }
+      
+      .response-stats {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .stat-item .counter {
+        font-size: 2rem;
+      }
+      
+      .area-list {
+        grid-template-columns: 1fr;
+      }
+      
+      .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+      
+      .emergency-contact {
+        padding: 25px;
+      }
+      
+      .location-details {
+        padding: 15px;
+        margin-top: 30px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .contact-benefits {
+        padding: 20px;
+      }
+      
+      .emergency-btn {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </body>
 </html>
