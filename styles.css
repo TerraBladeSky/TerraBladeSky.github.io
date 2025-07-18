@@ -345,6 +345,17 @@ footer {
   display: flex;
 }
 
+main .container .row ul {
+  padding-left: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+main .container .row .btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Grid System */
 .container {
   width: 100%;
